@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/select_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбрать изображение" />
+
+    <Button
+        android:id="@+id/test_scandit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Тест Scandit" />
+
+    <!-- Button to stop Scandit scanner -->
+    <Button
+        android:id="@+id/stop_scandit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Остановить Scandit" />
+
+   
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/results_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#f0f0f0"
+            android:text="Результаты будут отображены здесь" />
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#e0e0e0" />
+
+</LinearLayout>
